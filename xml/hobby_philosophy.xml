@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hobbyProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="hobby_philosophy.xsd">
+  <personal id="p001" lang="en" globalAttr="profile">
+    <name>Muhammet Canlı</name>
+    <age>20</age>
+    <location country="Poland" city="Gdańsk" />
+  </personal>
+  <philosophyOverview summary="Personal reading and reflection" focus="ethics" globalAttr="overview">
+    <philosophyText>This profile documents my evolving exploration of ethics and existential questions, combining <em>classic works</em> and <strong>modern reflections</strong>.</philosophyText>
+    <branches>
+      <branch type="ethics" level="intermediate">
+        <description>Exploring moral theories</description>
+        <readingList>
+          <reading id="r1">
+            <title>Nicomachean Ethics</title>
+            <author>Aristotle</author>
+            <year>350</year>
+            <link>https://plato.stanford.edu/entries/aristotle-ethics/</link>
+          </reading>
+          <reading id="r2">
+            <title>Being and Time</title>
+            <author>Martin Heidegger</author>
+            <year>1927</year>
+            <link>https://plato.stanford.edu/entries/heidegger/</link>
+          </reading>
+        </readingList>
+      </branch>
+      <branch type="existentialism" level="beginner">
+        <description>Existential questions and essays</description>
+      </branch>
+      <branch type="logic" level="beginner">
+        <description>Basic logical structures</description>
+      </branch>
+    </branches>
+    <events>
+      <event id="e01" type="discussion" date="2025-03-15">
+        <title>Local discussion group</title>
+        <location>University cafe</location>
+        <participants>
+          <participant idref="p001" role="moderator"/>
+          <participant idref="p002" role="5"/>
+        </participants>
+      </event>
+      <event id="e02" type="reading" date="2024-12-10">
+        <title>Reading workshop</title>
+        <location>Online</location>
+      </event>
+    </events>
+    <gallery>
+      <photo id="ph1" filename="images/photo1.jpg"><caption>Reading corner</caption></photo>
+      <photo id="ph2" filename="images/photo2.jpg"><caption>Notes</caption></photo>
+      <photo id="ph3" filename="images/photo3.jpg"><caption>Discussion</caption></photo>
+      <photo id="ph4" filename="images/photo4.jpg"><caption>Study desk</caption></photo>
+      <photo id="ph5" filename="images/photo5.jpg"><caption>Book stack</caption></photo>
+      <sketch id="sk1" filename="images/sketch1.jpg"><caption>Quick sketch</caption></sketch>
+    </gallery>
+    <externalLinks>
+      <link url="https://plato.stanford.edu/">https://plato.stanford.edu/</link>
+      <link url="https://iep.utm.edu/">https://iep.utm.edu/</link>
+      <link url="https://www.philosophybasics.com/">https://www.philosophybasics.com/</link>
+      <link url="https://www.khanacademy.org/humanities/philosophy">https://www.khanacademy.org/humanities/philosophy</link>
+    </externalLinks>
+    <data>Philosophy Hobby Data</data>
+  </philosophyOverview>
+  <weeklyPlan globalAttr="schedule" modes="online offline">
+    <day name="Monday">
+      <activity name="Reading" durationHours="1"/>
+    </day>
+    <day name="Wednesday">
+      <activity name="Discussion" durationHours="2"/>
+    </day>
+    <day name="Saturday">
+      <activity name="Writing" durationHours="1.5"/>
+    </day>
+  </weeklyPlan>
+</hobbyProfile>

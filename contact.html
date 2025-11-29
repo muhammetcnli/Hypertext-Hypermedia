@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/main.js" defer></script>
+</head>
+<body id="top">
+  <a href="#event-list" class="skip-link">Skip to events</a>
+  <header>
+    <h1>Contact & Events</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="gallery.html">Gallery</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Contact form</h2>
+      <form action="#" method="post" id="contact-form">
+        <label for="fullname">Full name</label>
+        <input id="fullname" name="fullname" type="text" required />
+        <label for="contact-email">Email</label>
+        <input id="contact-email" name="email" type="email" required />
+        <label for="topic">Topic</label>
+        <input id="topic" name="topic" type="text" />
+        <label for="file">Attach file</label>
+        <input id="file" name="attachment" type="file" />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6"></textarea>
+        <div class="form-buttons">
+          <button type="reset">Clear</button>
+          <button type="submit">Send</button>
+        </div>
+      </form>
+      <section id="event-list">
+        <h3>Events from XML</h3>
+        <ul id="events-from-xml"></ul>
+      </section>
+    </section>
+  </main>
+  <footer><a href="#top">Back to top</a></footer>
+  <div id="lightbox" aria-modal="true" role="dialog" aria-label="Büyütülmüş görsel" tabindex="-1">
+    <img alt="Büyütülmüş görsel" />
+    <button id="lightbox-close" aria-label="Kapat">Kapat</button>
+  </div>
+</body>
+</html>

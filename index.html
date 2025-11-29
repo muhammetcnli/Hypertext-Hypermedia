@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Philosophy as a Hobby</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/main.js" defer></script>
+</head>
+<body id="top">
+  <a href="#content" class="skip-link">Skip to content</a>
+  <header id="site-header">
+    <h1 id="profile-name">Loading...</h1>
+    <button id="menu-toggle" aria-controls="main-nav" aria-expanded="false">Menu</button>
+    <nav id="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="has-submenu">
+          <a href="gallery.html">Gallery</a>
+          <ul class="submenu">
+            <li><a href="gallery.html#photos">Photos</a></li>
+            <li><a href="gallery.html#sketches">Sketches</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="content">
+    <article>
+      <h2>About this hobby</h2>
+      <p id="overview-summary">Loading summary...</p>
+      <p class="intro">Philosophy as a personal hobby lets me explore ethics, logic and existential questions in an informal yet structured way. This page aggregates readings, events, visual notes and a weekly routine. Use the quick jump links below to explore sections directly.</p>
+      <p class="jump-links"><a href="#branches">Go to branches</a> | <a href="#schedule">Go to weekly schedule</a> | <a href="#links">Useful links</a></p>
+      <section id="branches">
+        <h3>Branches I explore</h3>
+        <ul id="branch-list"></ul>
+      </section>
+      <section id="schedule">
+        <h3>Weekly schedule</h3>
+        <table id="weekly-table">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Activity</th>
+              <th>Duration (hours)</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+      <section id="links">
+        <h3>Useful links</h3>
+        <ul id="external-links"></ul>
+        <p class="back-top"><a href="#top">Back to top</a></p>
+      </section>
+    </article>
+    <aside>
+      <h3>Quick survey</h3>
+      <form id="survey" action="#" method="get">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required />
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+        <label for="age">Age</label>
+        <input id="age" name="age" type="number" min="14" max="120" />
+        <label for="fav">Favorite philosopher</label>
+        <input id="fav" name="favorite" list="philosophers" />
+        <datalist id="philosophers">
+          <option value="Plato"></option>
+          <option value="Kierkegaard"></option>
+          <option value="Sartre"></option>
+        </datalist>
+        <label for="branch">Preferred branch</label>
+        <select id="branch" name="branch">
+          <option value="ethics">Ethics</option>
+          <option value="logic">Logic</option>
+          <option value="existentialism">Existentialism</option>
+        </select>
+        <fieldset>
+          <legend>Participation</legend>
+          <label><input type="radio" name="participation" value="online" /> Online</label>
+          <label><input type="radio" name="participation" value="offline" /> Offline</label>
+        </fieldset>
+        <label><input type="checkbox" name="newsletter" /> Subscribe to updates</label>
+        <label for="comments">Short comment</label>
+        <textarea id="comments" name="comments" rows="3"></textarea>
+        <div class="form-buttons">
+          <button type="reset">Clear</button>
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </aside>
+  </main>
+  <footer id="site-footer">
+    <p id="footer-credit">© 2025</p>
+  </footer>
+  <div id="lightbox" aria-modal="true" role="dialog" aria-label="Büyütülmüş görsel" tabindex="-1">
+    <img alt="Büyütülmüş görsel" />
+    <button id="lightbox-close" aria-label="Kapat">Kapat</button>
+  </div>
+  <svg id="decor" viewBox="0 0 200 100" aria-hidden="true">
+    <circle cx="50" cy="50" r="30"></circle>
+    <rect x="110" y="20" width="60" height="60" rx="10"></rect>
+  </svg>
+</body>
+</html>

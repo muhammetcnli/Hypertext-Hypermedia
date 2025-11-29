@@ -1,0 +1,58 @@
+<!ENTITY % commonAttribs "id ID #REQUIRED">
+<!ENTITY % opts "(online|offline|hybrid)">
+<!ENTITY % levelEnum "(beginner|intermediate|advanced)">
+
+<!ELEMENT hobbyProfile (personal,philosophyOverview,weeklyPlan)>
+<!ELEMENT personal (name,age,location)>
+<!ATTLIST personal %commonAttribs; lang CDATA "en" globalAttr CDATA #IMPLIED>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT location EMPTY>
+<!ATTLIST location country CDATA #IMPLIED city CDATA #IMPLIED>
+
+<!ELEMENT philosophyOverview (philosophyText?,branches,events,gallery,externalLinks?,data?)>
+<!ATTLIST philosophyOverview summary CDATA #IMPLIED focus CDATA #IMPLIED globalAttr CDATA #IMPLIED>
+<!ELEMENT philosophyText (#PCDATA|em|strong)*>
+<!ELEMENT em (#PCDATA)>
+<!ELEMENT strong (#PCDATA)>
+<!ELEMENT data (#PCDATA)>
+
+<!ELEMENT branches (branch+)>
+<!ELEMENT branch (description,readingList?)>
+<!ATTLIST branch type CDATA #REQUIRED level %levelEnum; "beginner">
+
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT readingList (reading*)>
+<!ELEMENT reading (title,author,year,link)>
+<!ATTLIST reading id ID #IMPLIED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+
+<!ELEMENT events (event*)>
+<!ELEMENT event (title,location,participants?)>
+<!ATTLIST event id ID #REQUIRED type CDATA #REQUIRED date CDATA #IMPLIED>
+
+<!ELEMENT participants (participant*)>
+<!ELEMENT participant EMPTY>
+<!ATTLIST participant idref IDREF #IMPLIED role CDATA #IMPLIED>
+
+<!ELEMENT gallery ((photo|sketch)+)>
+<!ELEMENT photo (caption?)>
+<!ATTLIST photo %commonAttribs; filename CDATA #REQUIRED>
+<!ELEMENT sketch (caption?)>
+<!ATTLIST sketch %commonAttribs; filename CDATA #REQUIRED>
+<!ELEMENT caption (#PCDATA)>
+
+<!ELEMENT externalLinks (link*)>
+
+<!ELEMENT weeklyPlan (day*)>
+<!ATTLIST weeklyPlan globalAttr CDATA #IMPLIED>
+<!ELEMENT day (activity*)>
+<!ATTLIST day name CDATA #REQUIRED>
+<!ELEMENT activity EMPTY>
+<!ATTLIST activity name CDATA #REQUIRED durationHours CDATA #IMPLIED mode %opts; #IMPLIED>
+
+<!ENTITY % participation "%opts;">

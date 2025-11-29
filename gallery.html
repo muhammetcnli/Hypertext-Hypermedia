@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery - Philosophy</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/main.js" defer></script>
+</head>
+<body id="top">
+  <a href="#photos" class="skip-link">Skip to photos</a>
+  <header>
+    <h1>Gallery</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="photos">
+      <h2>Photos</h2>
+      <div class="gallery" id="gallery-grid"></div>
+    </section>
+    <section id="sketches">
+      <h2>Sketches</h2>
+      <div class="gallery" id="sketch-grid"></div>
+    </section>
+  </main>
+  <footer>
+    <a href="#top">Back to top</a> | <a href="index.html#branches">Branches</a>
+  </footer>
+  <div id="lightbox" aria-modal="true" role="dialog" aria-label="Büyütülmüş görsel" tabindex="-1">
+    <img alt="Büyütülmüş görsel" />
+    <button id="lightbox-close" aria-label="Kapat">Kapat</button>
+  </div>
+</body>
+</html>
